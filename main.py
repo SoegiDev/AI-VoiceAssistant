@@ -1,12 +1,9 @@
-import speech_recognition as sr
 from datetime import datetime
-from gtts import gTTS
-from playsound import playsound 
-import os
 from Zelanda import ZelandaAsisstant
+from ZelandaUI import UI
 
 obj = ZelandaAsisstant()
-
+ui_data = UI()
 def speak(text):
     obj.tts(text)
 
@@ -31,3 +28,4 @@ if __name__ == "__main__":
         while True:
             command = obj.mic_input()
             zelanda_response(command)
+            ui_data.window_ui()
