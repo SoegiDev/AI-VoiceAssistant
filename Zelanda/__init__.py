@@ -8,7 +8,9 @@ from Library.Zelanda import GenericAssistant
 from Zelanda.features import date_time
 from Zelanda.features import current_location
 from Zelanda.features import wikipedia
-assistant = GenericAssistant('intents.json', model_name="test_model")
+
+version = "testing_zelandav1.0.0"
+assistant = GenericAssistant('intents.json', model_name=version)
 assistant.train_model()
 assistant.save_model()
 

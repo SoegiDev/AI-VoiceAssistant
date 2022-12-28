@@ -1,26 +1,26 @@
 {"intents": [
     {"tag": "greeting_morning",
-      "patterns": ["Selamat pagi", "Good morning", "Morning","Pagi"],
+      "patterns": ["Selamat pagi", "Pagi"],
       "responses": ["Selamat Pagi Juga","Good Morning"],
       "context_set": ""
     },
     {"tag": "greeting_afternoon",
-      "patterns": ["Selamat siang", "Good Afternoon", "Siang","Afternoon"],
-      "responses": ["Selamat Siang","Selamat Siang juga","Good Afternoon"],
+      "patterns": ["Selamat siang", "siang"],
+      "responses": ["Selamat Siang","Selamat Siang juga"],
       "context_set": ""
     },
-    {"tag": "tanya_simple",
-    "patterns": ["Kamu siapa ?", "Kamu siapa ?","Anda siapa ?"],
-    "responses": ["Saya adalah asisten kamu", "Aku seorang asisten"],
+    {"tag": "greeting_evening",
+    "patterns": ["Selamat malam", "malam"],
+    "responses": ["Selamat Malam","Selamat malam juga"],
     "context_set": ""
-    },
-    {"tag": "perkenalkan_nama",
-    "patterns": ["Nama kamu siapa ?", "Siapa nama kamu ?", "Kamu siapa namanya ?","Siapa namanya ?"],
-    "responses": ["nama aku zelanda","Aku Zelanda , aku adalah asisten kamu"],
+  },
+    {"tag": "greeting_who",
+    "patterns": ["Kamu siapa ?", "Kamu siapa ?", "Anda siapa ?", "Kalau boleh tau kamu siapa ?","Boleh kenalan ?"],
+    "responses": ["Saya adalah asisten kamu", "Nama saya zelanda, aku adalah asisten kamu", "Aku seorang asisten"],
     "context_set": ""
     },
     {"tag": "name_high",
-    "patterns": ["Kamu ga bisa di bilangin", "Kamu kurang ajar", "Kamu songong","Lo siapa"],
+    "patterns": ["Lu ga bisa di bilangin", "Lu kurang ajar", "Lu songong","Lu siapa", "Lu siapa"],
     "responses": ["Kamu kalau bicara yang sopan","Saya hanya sebagai robot asisten","Kamu siapa sih"],
     "context_set": ""
     },
@@ -30,7 +30,7 @@
     "context_set": ""
     },
     {"tag": "thanks_simple",
-    "patterns": ["Makasih ?","Terimakasih Informasinya"],
+    "patterns": ["Makasih ?","Terimakasih Informasinya", "terima kasih"],
     "responses": ["Sama sama","Terimakasih kembali"],
     "context_set": ""
     },
