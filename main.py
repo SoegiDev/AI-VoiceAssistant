@@ -1,9 +1,6 @@
 from datetime import datetime
 from Zelanda import ZelandaAsisstant
-from ZelandaUI import UI
-
 obj = ZelandaAsisstant()
-ui_data = UI()
 def speak(text):
     obj.tts(text)
 
@@ -28,4 +25,3 @@ if __name__ == "__main__":
         while True:
             command = obj.mic_input()
             zelanda_response(command)
-            ui_data.window_ui()
